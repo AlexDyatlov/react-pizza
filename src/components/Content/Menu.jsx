@@ -13,7 +13,11 @@ function Menu() {
           'Острые',
           'Закрытые'
       ]} />
-      <SortPopup items={['популярности', 'цене', 'алфавиту']} />
+      <SortPopup items={[
+        {name: 'популярности', type: 'popular'},
+        {name: 'цене', type: 'price'},
+        {name: 'алфавиту', type: 'alphabet'},     
+      ]} />
     </div>
   );
 }
