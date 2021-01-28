@@ -2,22 +2,20 @@ import React from 'react';
 
 import { Categories, SortPopup } from '../../components'
 
-function Menu() {
+const categoryNames = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+const sortItems = [ 
+  {name: 'популярности', type: 'popular'},
+  {name: 'цене', type: 'price'},
+  {name: 'алфавиту', type: 'alphabet'},   
+];
+
+function Menu({ onSelect }) {
   return (
     <div className="content__top">
       <Categories
-        items={[
-          'Мясные',
-          'Вегетарианская',
-          'Гриль',
-          'Острые',
-          'Закрытые'
-      ]} />
-      <SortPopup items={[
-        {name: 'популярности', type: 'popular'},
-        {name: 'цене', type: 'price'},
-        {name: 'алфавиту', type: 'alphabet'},     
-      ]} />
+        onClickItem={onSelect}
+        items={categoryNames} />
+      <SortPopup items={sortItems} />
     </div>
   );
 }

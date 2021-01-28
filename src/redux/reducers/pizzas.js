@@ -1,4 +1,4 @@
-const SET_PIZZAS = 'react-pizza/pizzas/SET_PIZZAS'
+const SET_PIZZAS = 'react-pizza/pizzas/SET_PIZZAS';
 
 const initialState = {
   items: [],
