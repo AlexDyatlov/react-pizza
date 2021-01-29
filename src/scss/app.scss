@@ -18,6 +18,12 @@ body {
   max-width: 1400px;
 }
 
+.preloader{
+  flex-basis: calc(24.330% - 35px);
+  margin-left: 35px;
+  margin-bottom: 65px;
+}
+
 .content {
   padding: 40px 0;
 
