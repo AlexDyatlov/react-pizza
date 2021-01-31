@@ -1,10 +1,14 @@
 @import 'variables';
 
 .pizza-block {
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  flex-basis: calc(24.330% - 35px);
-  margin-left: 35px;
+  flex-basis: calc(24.330% - 2.7%);
+  margin-left: 2.7%;
   margin-bottom: 65px;
   &__image {
     width: 260px;
@@ -12,7 +16,6 @@
   &__title {
     font-size: 20px;
     font-weight: 900;
-    letter-spacing: 1%;
     margin-bottom: 20px;
   }
 
@@ -22,7 +25,7 @@
     border-radius: 10px;
     flex-direction: column;
     padding: 6px;
-
+    margin-top: auto;
     ul {
       display: flex;
       flex: 1;

@@ -4,10 +4,10 @@ import ContentLoader from 'react-content-loader';
 function Preloader() {
   return (
     <ContentLoader 
-      className="preloader"
+      className="pizza-block"
       speed={2}
       width={280}
-      height={460}
+      height={470}
       viewBox="0 0 280 460"
       backgroundColor="#f3f3f3"
       foregroundColor="#ecebeb">
@@ -20,4 +20,4 @@ function Preloader() {
   );
 }
 
-export default Preloader
+export default Preloader;

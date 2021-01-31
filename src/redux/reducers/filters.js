@@ -1,18 +1,29 @@
-const SET_SORT_BY = 'react-pizza/filters/SET_SORT_BY'
+const SET_SORT_BY = 'react-pizza/filters/SET_SORT_BY';
+const SET_CATEGORY = 'react-pizza/filters/SET_CATEGORY';
 
 const initialState = {
-  category: 0,
-  sortBy: 'popular'
+  category: null,
+  sortBy: {
+    type: 'rating',
+    order: 'desc',
+  }
 };
 
 const filtersReducer = (state = initialState, action) => {
-  if (action.type === SET_SORT_BY) {
-    return {
-      ...state, // берём старые данные
-      sortBy: action.payload, // заменяем на action.payload
-    }
+  switch (action.type) {
+    case SET_SORT_BY:
+      return {
+        ...state,
+        sortBy: action.payload,
+      }
+    case SET_CATEGORY:
+        return {
+          ...state,
+        category: action.payload,
+      }
+    default:
+      return state;
   }
-  return state;
 };
 
 export default filtersReducer;
