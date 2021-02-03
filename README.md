@@ -2,6 +2,8 @@
 
 Front-end разработка интернет магазина на React.js
 
+**Проект** - https://best-pizza-on-react-js.herokuapp.com/
+
 Запуск проекта в ide:
 
 ### `yarn` - Команда установит все зависимости.

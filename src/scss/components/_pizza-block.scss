@@ -1,8 +1,7 @@
 @import 'variables';
 
 .pizza-block {
-  max-width: 280px;
-  width: 100%;
+  width: 280px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,6 @@
     font-weight: 900;
     margin-bottom: 20px;
   }
-
   &__selector {
     display: flex;
     background-color: #f3f3f3;
@@ -30,11 +28,9 @@
     ul {
       display: flex;
       flex: 1;
-
       &:first-of-type {
         margin-bottom: 6px;
       }
-
       li {
         padding: 8px;
         flex: 1;
@@ -55,14 +51,12 @@
       }
     }
   }
-
   &__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
   }
-
   &__price {
     font-weight: bold;
     font-size: 22px;
