@@ -1,0 +1,9 @@
+export const SET_PIZZAS = 'react-pizza/pizzas/SET_PIZZAS';
+export const SET_LOADED = 'react-pizza/pizzas/SET_LOADED';
+export const SET_SORT_BY = 'react-pizza/filters/SET_SORT_BY';
+export const SET_CATEGORY = 'react-pizza/filters/SET_CATEGORY';
+export const ADD_PIZZA_CART = 'react-pizza/cart/ADD_PIZZA_CART';
+export const CLEAR_CART = 'react-pizza/cart/CLEAR_CART';
+export const REMOVE_CART_ITEM = 'react-pizza/cart/REMOVE_CART_ITEM';
+export const PLUS_CART_ITEM = 'react-pizza/cart/PLUS_CART_ITEM';
+export const MINUS_CART_ITEM = 'react-pizza/cart/MINUS_CART_ITEM';

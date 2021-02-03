@@ -6,7 +6,7 @@ import { setCategory, setSortBy } from '../redux/actions/filters';
 import { fetchPizzas } from '../redux/actions/pizzas';
 import { addPizzaToCart } from '../redux/actions/cart';
 
-const categoryNames = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+const categoryNames = ['Мясные', 'Вегетарианские', 'Сладкие', 'Острые', 'Классические'];
 const sortItems = [ 
   {name: 'популярности', type: 'rating', order: 'desc'},
   {name: 'цене', type: 'price', order: 'desc'},
@@ -52,7 +52,7 @@ function Home() {
             <PizzaBlock 
               onClickAddPizza={handleAddPizzaToCart} 
               key={obj.id} {...obj}
-              addedCount={cartItems[obj.id] && cartItems[obj.id].length}
+              addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
             />)
           : Array(10).fill(0).map((_, index) => <Preloader key={index} />)}
       </div>

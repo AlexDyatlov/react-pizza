@@ -1,5 +1,4 @@
-const SET_PIZZAS = 'react-pizza/pizzas/SET_PIZZAS';
-const SET_LOADED = 'react-pizza/pizzas/SET_LOADED';
+import { SET_PIZZAS, SET_LOADED } from '..';
 
 const initialState = {
   items: [],

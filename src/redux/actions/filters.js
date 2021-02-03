@@ -1,5 +1,4 @@
-const SET_SORT_BY = 'react-pizza/filters/SET_SORT_BY';
-const SET_CATEGORY = 'react-pizza/filters/SET_CATEGORY';
+import { SET_SORT_BY, SET_CATEGORY } from '..';
 
 export const setSortBy = ({type, order}) => ({
   type: SET_SORT_BY,
