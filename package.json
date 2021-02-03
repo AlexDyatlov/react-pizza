@@ -18,9 +18,7 @@
     "react-scripts": "4.0.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "web-vitals": "^0.2.4"
-  },
-  "devDependencies": {
+    "web-vitals": "^0.2.4",
     "express": "^4.17.1",
     "json-server": "^0.16.3"
   },
@@ -29,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node server.js"
+    "server": "node server.js",
+    "json-server": "json-server --watch public/db.json --port=3001"
   },
   "eslintConfig": {
     "extends": [
